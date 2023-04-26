@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script>
+const firstNumber = parseInt(prompt("Введите первое число:"));
+const secondNumber = parseInt(prompt("Введите второе число:"));
+const operation = prompt("Введите операцию (+, -, *, /):");
+
+let result;
+switch (operation) {
+  case "+":
+    result = firstNumber + secondNumber;
+    break;
+  case "-":
+    result = firstNumber - secondNumber;
+    break;
+  case "*":
+    result = firstNumber * secondNumber;
+    break;
+  case "/":
+    result = firstNumber / secondNumber;
+    break;
+  default:
+    result = "Неверная операция";
+    break;
+}
+
+console.log(result);
+</script>
