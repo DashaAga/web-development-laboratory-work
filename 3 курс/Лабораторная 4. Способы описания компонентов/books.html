@@ -71,7 +71,7 @@
                 <a class="nav-link" href="#">Мероприятия</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">О нас</a>
+                <a className="nav-link" href="#"></a>
               </li>
             </ul>
           </div>
@@ -119,8 +119,8 @@
     );
   }
 
-
   function Card({ product }) {
+    const [showPrice, setShowPrice] = useState(false);
     return (
       <div className="product-item">
         <img className="avatar"
@@ -129,9 +129,9 @@
           width = {product.imageWidth}
           height = {product.imageHeight}/>
         <div className="product-list">
-          <h3>{product.name}</h3>
-          <span className="price">{product.price}</span>
-          <a href="" className="button">В корзину</a>
+          <span className="price">{showPrice ? product.price : "Цена скрыта"}</span>
+        <button onClick={() => setShowPrice(!showPrice)}>Показать цену</button>
+        <a href="" className="button">В корзину</a>
         </div>
       </div>
     );
@@ -225,6 +225,39 @@
               }}
             />
           </Row>
+                    <Row>
+            <Card
+              product={{
+                name: 'Маргарет Митчелл',
+                price: '799',
+                imageId: '1',
+                imageHeight: 400,
+                imageWidth: 300
+              }}
+            />
+          </Row>
+          <Row>
+            <Card
+              product={{
+                name: 'Олдас Хаксли',
+                price: '259',
+                imageId: 'old',
+                imageHeight: 400,
+                imageWidth: 300
+              }}
+            />
+          </Row>
+          <Row>
+            <Card
+              product={{
+                name: 'Эрих Мария Ремарк',
+                price: '439',
+                imageId: 'rmr',
+                imageHeight: 400,
+                imageWidth: 300
+              }}
+            />
+          </Row>
         </Grid>
         <Title
         info={{
@@ -263,6 +296,39 @@
                 imageId: 'mzk',
                 imageHeight: 500,
                 imageWidth: 100
+              }}
+            />
+          </Row>
+                    <Row>
+            <Card
+              product={{
+                name: 'Маргарет Митчелл',
+                price: '799',
+                imageId: '1',
+                imageHeight: 400,
+                imageWidth: 300
+              }}
+            />
+          </Row>
+          <Row>
+            <Card
+              product={{
+                name: 'Олдас Хаксли',
+                price: '259',
+                imageId: 'old',
+                imageHeight: 400,
+                imageWidth: 300
+              }}
+            />
+          </Row>
+          <Row>
+            <Card
+              product={{
+                name: 'Эрих Мария Ремарк',
+                price: '439',
+                imageId: 'rmr',
+                imageHeight: 400,
+                imageWidth: 300
               }}
             />
           </Row>

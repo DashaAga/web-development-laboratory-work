@@ -144,38 +144,38 @@
 
     const people = [{
         id: 0,
-        name: 'Isaac Newton',
-        profession: 'mathematician',
-        accomplishment: 'mathematician and physicist',
+        name: 'Исаак Ньютон',
+        profession: 'математик',
+        accomplishment: 'Математик и физик',
         imageId: 'PlxS7eP'
     }, {
         id: 1,
-        name: 'Dmitri Mendeleev',
-        profession: 'chemist',
-        accomplishment: 'devised the periodic table of the elements',
+        name: 'Дмитрий Менделеев',
+        profession: 'химик',
+        accomplishment: 'Разработал периодическую таблицу элементов',
         imageId: 'gXAbMRA'
     }, {
         id: 2,
-        name: 'Galileo Galilei',
-        profession: 'physicist',
-        accomplishment: 'was an Italian astronomer, physicist and engineer',
+        name: 'Галилео Галилей',
+        profession: 'физик',
+        accomplishment: 'Был итальянским астрономом, физиком и инженером',
         imageId: 'iPgghN5'
     }, {
         id: 3,
-        name: 'Antoine Lavoisier',
-        profession: 'chemist',
-        accomplishment: 'discussed ideas and problems related to chemistry',
+        name: 'Антони Лавостер',
+        profession: 'химик',
+        accomplishment: 'Обсуждали идеи и проблемы, связанные с химией',
         imageId: 'M31hUDl'
     }, {
         id: 4,
-        name: 'Edwin Hubble',
-        profession: 'astrophysicist',
-        accomplishment: 'American astronomer who played a crucial role in establishing the field of extragalactic astronomy',
+        name: 'Эдвин Хаббл',
+        profession: 'астрофизик',
+        accomplishment: 'Американский астроном, сыгравший решающую роль в создании области внегалактической астрономии',
         imageId: 'ptruXqm'
     }];
 
     function renderTable(people) {
-        var sortOrder = prompt("Выберите профессию: (astrophysicist, chemist, physicist, mathematician)");
+        var sortOrder = prompt("Выберите профессию: (астрофизик, химик, физик, математик)");
         if (sortOrder !== null) {
             alert("Вы выбрали " + sortOrder);
         }
@@ -185,10 +185,10 @@
                 <thead>
                     <tr>
                         <th class="sorting" onclick="sortTable(0)">ID</th>
-                        <th class="sorting" onclick="sortTable(1)">Name</th>
-                        <th class="sorting" onclick="sortTable(2)">Profession</th>
-                        <th class="sorting" onclick="sortTable(3)">Accomplishment</th>
-                        <th class="sorting">Image</th>
+                        <th class="sorting" onclick="sortTable(1)">Имя ученого</th>
+                        <th class="sorting" onclick="sortTable(2)">Профессия</th>
+                        <th class="sorting" onclick="sortTable(3)">Достижение</th>
+                        <th class="sorting">Фото</th>
                     </tr>
                 </thead>
 
